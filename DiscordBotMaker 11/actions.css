@@ -1,0 +1,215 @@
+#action-label {
+	padding: 10px 15px 10px 15px;
+	cursor: pointer;background-color: rgb(255, 255, 255, 0.1);
+	outline: none;border: 1px solid transparent;box-shadow: none;color: #fff;
+}
+#action-label:hover {
+	background-color: rgb(255, 255, 255, 0.15);
+}
+#action-label:active {
+	opacity: 0.75;transform: none;
+}
+
+button.opener {
+	background: rgb(255, 255, 255, 0.035);
+	color: #eee;
+	cursor: pointer;position: relative;
+	padding: 8px;
+	padding-left: 16px;
+	/*margin: 5px 0;*/
+	border-radius: 6px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 14px;
+	transition: 0.4s;
+}
+button.opener:hover{
+	background: rgb(255, 255, 255, 0.1)!important;
+}
+button.opener:active{
+	background: rgb(0, 0, 0, 0.2)!important;
+}
+button.openerChild::before, button.opener::before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 0%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2px;
+	border-radius: 100px;
+	background-color: transparent;
+	transition: .2s cubic-bezier(0.75, 0, 0, 1);
+}
+button.openerChild:hover::before, button.opener:hover::before {
+	height: 25%;
+	background-color: rgb(255, 255, 255, 0.1);
+}
+button.openerChild:active::before, button.opener:active::before {
+	height: 20%;
+}
+button.opener.active::before {
+	height: 35%;
+	background-color: dodgerblue;
+}
+button.opener.active:hover::before {
+	height: 45%;
+	background-color: dodgerblue;
+}
+button.opener.active:active::before {
+	height: 40%;
+	background-color: dodgerblue;
+}
+button.openerChild {
+	background-color: rgb(255, 255, 255, 0.1);
+	color: #eee;
+	cursor: pointer;position: relative;
+	padding: 6px;
+	padding-left: 16px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 12px;
+}
+
+button.openerChild.active, button.openerChild:hover {
+	background-color: rgb(255, 255, 255, 0.15);
+}
+button.openerChild.active, button.openerChild:active {
+	background-color: rgb(255, 255, 255, 0.05);
+}
+
+button.opener:after {
+	content: '+';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+button.openerChild:after {
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+button.opener.active:after {
+	content: "-";
+}
+
+button.searchClearButton {
+	float: left;
+	margin-right: 10px;
+	margin-top: 1px;
+	width: 15px;
+	height: 15px;
+	color: 0;
+	background: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+}
+
+button.searchClearButton:active {
+	padding-left: 1px;
+	padding-top: 1px;
+}
+
+div.dropContent {
+	background-color: rgba(0,0,0,0.3);
+	max-height: 0;
+	overflow: hidden;
+	margin: 5px;border-radius: 8px;border: none;box-shadow: none;
+	transition: max-height 0.2s ease-out;
+}
+
+.ui.dropdown {
+	text-align: center;
+	width: 200px;
+}
+
+input[type=text] {
+	width: 100%;
+}
+
+.action-input {
+	margin: 0 auto;
+	padding-top: 6px;
+	/*max-width: 640px;*/
+	width: 94%;
+	height: 80%;
+}
+
+.action-input h1 {
+	margin-top: 0;
+}
+body.pushable > .pusher, body.pushable{
+	background: rgb(30, 30, 30)!important;
+}
+#theHead {
+	right: 0;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	text-align: center;
+}
+.ui.visible.scale.down.sidebar ~ .pusher{transform: scale(1)!important;}
+.action-footer {
+	width: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: transparent;
+	text-align: center;
+}
+
+#leSideBarContent {
+	margin-right: 10px;
+	width: 220px;overflow-x: hidden;padding: 5px;
+}
+
+#leSideBar {
+	width: 232px;
+	margin: 10px;
+}
+
+#leSideBar::-webkit-scrollbar {
+	width: 12px;
+	background-color: #242629;
+}
+
+#leSideBar::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #242629;
+}
+
+#leSideBar::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100;
+	background-color: transparent;
+	transform: scale(0.7, 0.7);
+}
+
+input::-webkit-calendar-picker-indicator:hover {
+	background-color: transparent;
+}
+
+input#searchfilter {
+	border-radius: 4px;
+	padding-left: 4px;
+	width: 94%;
+	height: 22px;
+	border: 1px solid #333333;
+}
