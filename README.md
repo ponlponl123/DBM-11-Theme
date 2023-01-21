@@ -1,5 +1,6 @@
-- [ ] This project is outdated.
+**Project Check List**
 - [x] This project is also compatible with Discord Bot Maker.
+- [ ] This project is outdated.
 
 # DBM-11-Theme (Beta)
 Sometimes this theme is like Windows 11 and sometimes this theme is like Android 12.
