@@ -1,10 +1,8 @@
-![Pattarapong.Dev](https://cdn.silapa.xyz/icon/logo/png/PattarapongDev.png)
-
 *Translation Engine: [Google Translate](https://translate.google.com/)*
 
 **Project Check List**
 - [x] This project is also compatible with Discord Bot Maker.
-- [ ] This project is outdated.
+- [x] This project is outdated.
 
 # DBM-11-Theme (Beta)
 Sometimes this theme is like Windows 11 and sometimes this theme is like Android 12.
